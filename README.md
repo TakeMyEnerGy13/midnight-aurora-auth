@@ -1,41 +1,55 @@
 # Midnight Aurora Auth
 
-Hand-built SPA authentication screen on `React + Vite + TypeScript` with no UI component libraries.
+SPA-экран аутентификации на `React + Vite + TypeScript` без библиотек UI-компонентов.
 
-## Included
+## Демо
 
-- `Email + password` sign-in flow
-- inline validation
-- loading, error, and success states
-- password show/hide toggle
-- keyboard-friendly focus states
-- dark `Midnight Aurora` theme
-- light `Linen` fallback theme
+- GitHub Pages: https://takemyenergy13.github.io/midnight-aurora-auth/
+- Репозиторий: https://github.com/TakeMyEnerGy13/midnight-aurora-auth
 
-## Run locally
+## Что внутри
+
+- вход по `email + password`
+- встроенная валидация
+- состояния `loading`, `error`, `success`
+- переключение видимости пароля
+- корректные состояния фокуса для клавиатурной навигации
+- тема `Midnight Aurora`
+- резервная тема `Linen`
+
+## Как открыть страницу из GitHub-репозитория
+
+1. Открой репозиторий: `https://github.com/TakeMyEnerGy13/midnight-aurora-auth`
+2. Перейди по ссылке GitHub Pages:
+   `https://takemyenergy13.github.io/midnight-aurora-auth/`
+
+Если нужно проверить статус публикации:
+
+1. Открой вкладку `Actions`
+2. Найди workflow `Deploy to GitHub Pages`
+3. После успешного статуса страница доступна по ссылке выше
+
+## Локальный запуск
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Build
+## Сборка production-версии
 
 ```bash
 npm run build
 ```
 
-## Notes
+## Примечания
 
-- Enter an email containing `error` to trigger the mock server error state.
-- Theme switcher is included to preview both design directions from the spec.
-- `vite.config.ts` uses `base: './'` so the build works on GitHub Pages repo paths.
+- Email со словом `error` вызывает имитацию серверной ошибки
+- Переключатель темы добавлен для просмотра обеих визуальных концепций
+- В `vite.config.ts` указан `base: './'`, чтобы сборка корректно работала на GitHub Pages
 
-## Deploy to GitHub Pages
+## Деплой
 
-This repo includes a GitHub Actions workflow in `.github/workflows/deploy.yml`.
+В репозитории уже настроен GitHub Actions workflow: `.github/workflows/deploy.yml`.
 
-1. Push the repository to GitHub.
-2. In GitHub, open `Settings -> Pages`.
-3. Set `Source` to `GitHub Actions`.
-4. Push to `main` to publish.
+Новый push в `main` автоматически публикует обновлённую версию на GitHub Pages.
