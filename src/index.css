@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --ink-950: #0a0f1c;
+  --ink-900: #0e1424;
+  --ink-800: #131b30;
+  --ink-700: #1b2540;
+
+  --text-primary: #f4f6fb;
+  --text-secondary: #a6b0c3;
+  --text-muted: #6a7691;
+
+  --surface-card: rgba(255, 255, 255, 0.04);
+  --surface-card-border: rgba(255, 255, 255, 0.08);
+  --surface-elevated: rgba(255, 255, 255, 0.05);
+  --surface-input: rgba(255, 255, 255, 0.03);
+  --surface-input-focus: rgba(255, 255, 255, 0.05);
+  --surface-input-border: rgba(255, 255, 255, 0.1);
+  --surface-input-border-hover: rgba(255, 255, 255, 0.18);
+
+  --accent-500: #2dd4bf;
+  --accent-600: #14b8a6;
+  --accent-700: #0d9488;
+  --accent-tint: rgba(45, 212, 191, 0.18);
+
+  --aurora-teal: #2dd4bf;
+  --aurora-cyan: #38bdf8;
+  --aurora-amber: #f59e0b;
+
+  --danger-500: #f87171;
+  --danger-tint: rgba(248, 113, 113, 0.14);
+  --success-500: #34d399;
+
+  --button-text: var(--ink-950);
+  --button-disabled-bg: rgba(45, 212, 191, 0.3);
+  --button-disabled-text: rgba(10, 15, 28, 0.55);
+  --link-color: #d9e1f2;
+  --link-color-hover: #ffffff;
+
+  --page-background: var(--ink-950);
+  --brand-mark-bg: rgba(255, 255, 255, 0.06);
+  --brand-mark-border: rgba(255, 255, 255, 0.12);
+  --card-blur: blur(20px);
+  --brand-blur: blur(18px);
+  --theme-switcher-blur: blur(18px);
+  --theme-chip-active-bg: rgba(255, 255, 255, 0.1);
+  --theme-chip-active-text: var(--text-primary);
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+
+  --radius-md: 0.625rem;
+  --radius-lg: 1.25rem;
+
+  --shadow-card:
+    0 30px 80px -20px rgba(0, 0, 0, 0.55),
+    0 8px 24px -8px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  --shadow-input-focus: 0 0 0 4px var(--accent-tint);
+  --shadow-button-rest: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+  --shadow-button-hover: 0 10px 24px -10px rgba(45, 212, 191, 0.45);
+  --shadow-brand:
+    0 12px 30px -10px rgba(0, 0, 0, 0.46),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  --shadow-soft: 0 18px 42px -24px rgba(0, 0, 0, 0.55);
+
+  --motion-base: 180ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  --motion-slow: 260ms cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  font-family:
+    'Inter',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text-primary);
+  background: var(--page-background);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[data-theme='linen'] {
+  --text-primary: #1b1f2a;
+  --text-secondary: #3a4150;
+  --text-muted: #6b7385;
+
+  --surface-card: #ffffff;
+  --surface-card-border: rgba(27, 31, 42, 0.1);
+  --surface-elevated: rgba(255, 255, 255, 0.82);
+  --surface-input: #ffffff;
+  --surface-input-focus: #ffffff;
+  --surface-input-border: rgba(27, 31, 42, 0.1);
+  --surface-input-border-hover: rgba(27, 31, 42, 0.16);
+
+  --accent-500: #14543f;
+  --accent-600: #0f4530;
+  --accent-700: #0a3624;
+  --accent-tint: rgba(20, 84, 63, 0.1);
+  --danger-500: #b23a3a;
+  --danger-tint: rgba(178, 58, 58, 0.12);
+
+  --button-text: #f9f8f4;
+  --button-disabled-bg: rgba(20, 84, 63, 0.28);
+  --button-disabled-text: rgba(249, 248, 244, 0.7);
+  --link-color: #14543f;
+  --link-color-hover: #0f4530;
+
+  --page-background: #f3eee5;
+  --brand-mark-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(250, 247, 241, 0.95));
+  --brand-mark-border: rgba(27, 31, 42, 0.08);
+  --card-blur: none;
+  --brand-blur: none;
+  --theme-switcher-blur: none;
+  --theme-chip-active-bg: rgba(20, 84, 63, 0.12);
+  --theme-chip-active-text: var(--accent-500);
+
+  --shadow-card:
+    0 1px 2px rgba(27, 31, 42, 0.06),
+    0 12px 32px -12px rgba(27, 31, 42, 0.18);
+  --shadow-button-hover: 0 8px 20px -8px rgba(20, 84, 63, 0.35);
+  --shadow-brand:
+    0 6px 18px -10px rgba(27, 31, 42, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.75);
+  --shadow-soft: 0 18px 36px -28px rgba(27, 31, 42, 0.24);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+strong {
+  font-weight: 600;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
